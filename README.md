@@ -27,8 +27,8 @@ Then i add the array to $my_meta_box array
       // addition to the 'fields' group:
       array(
         'id'          => 'slider_select',
-        'label'       => __( 'Revolution Slider', 'option-tree-theme' ),
-        'desc'        => __( 'Choose one of the revolution slider created.', 'option-tree-theme' ),
+        'label'       => __( 'Revolution Slider', 'theme-text-domain' ),
+        'desc'        => __( 'Choose one of the revolution slider created.', 'theme-text-domain' ),
         'type'        => 'select',
         'choices'     => $array_choices
       ),
