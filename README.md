@@ -2,8 +2,9 @@
 Revolution slider metabox for option tree plugin (select field)
 
 ## Synopsis
-This is an addition to the default example of meta_boxex.php included in Option Tree Plugin:
-https://wordpress.org/plugins/option-tree/
+This is an addition to the default example of meta_boxex.php included in Option Tree Plugin demo_meta_box.php:
+
+https://github.com/valendesigns/option-tree/blob/master/assets/theme-mode/demo-meta-boxes.php
 
 ## Code
 The addition is in the first part of the function custom_meta_boxes() where i create an array of all the revolution slider created in your theme.
@@ -34,9 +35,11 @@ Then i add the array to $my_meta_box array
       // rest of the settings
       
 ## Installation
-Just replace the original meta_box.php with this one, or copy only the two parts above
+Just replace the original meta_box.php with this one, or copy only the two parts above. You'll find the new element in your page/post metabox
 
-In order to print the selected metabox revolution slider use:
+![Alt text](http://i.imgur.com/UDSe5vm.jpg "Screenshot")
+
+In order to print the selected metabox revolution slider in your theme use:
       
       $my_slider        = get_post_meta($post->ID, 'slider_select', true); 
       if(function_exists("putRevSlider") { 
