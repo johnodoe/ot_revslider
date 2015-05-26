@@ -100,8 +100,8 @@ function custom_meta_boxes() {
       ),
       array(
         'id'          => 'slider_select',
-        'label'       => __( 'Revolution Slider', 'option-tree-theme' ),
-        'desc'        => __( 'Choose one of the revolution slider created.', 'option-tree-theme' ),
+        'label'       => __( 'Revolution Slider', 'theme-text-domain' ),
+        'desc'        => __( 'Choose one of the revolution slider created.', 'theme-text-domain' ),
         'type'        => 'select',
         'choices'     => $array_choices
       )
