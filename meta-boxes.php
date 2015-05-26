@@ -13,18 +13,18 @@ add_action( 'admin_init', 'custom_meta_boxes' );
  * @since     2.0
  */
 function custom_meta_boxes() {
-  
-  /**
-   * Create a custom meta boxes array that we pass to 
-   * the OptionTree Meta Box API Class.
-   */
 
+ 
+  
   $array_choices      = array();
   if(shortcode_exists("rev_slider"))  { 
     $new_slider       = new RevSlider();
     $tot_revsliders   = $new_slider->getArrSliders();
 
-
+    array_push($array_choices, 
+                    array('value' => '',
+                          'label' => __('Choose a Slider','theme-text-domain'),
+                          'src'   =>''));   
     foreach ( $tot_revsliders as $rev_single ) {
          $alias   = $rev_single->getAlias();
          $title   = $rev_single->getTitle();
@@ -33,18 +33,12 @@ function custom_meta_boxes() {
                           'label' =>$title,
                           'src'   =>''));      
     }
-    
-  /* 
-      PRINT THE REVOLUTION SLIDER IN THEMES 
-      
-      $my_slider        = get_post_meta($post->ID, 'slider_select', true); 
-      
-      if(function_exists("putRevSlider") { 
-        putRevSlider  ( $my_slider ); 
-      };
-
-    */
   }
+  
+  /**
+   * Create a custom meta boxes array that we pass to 
+   * the OptionTree Meta Box API Class.
+   */
 
   $my_meta_box = array(
     'id'          => 'demo_meta_box',
