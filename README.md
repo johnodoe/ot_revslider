@@ -13,6 +13,10 @@ The addition is in the first part of the function custom_meta_boxes() where i cr
     if(shortcode_exists("rev_slider"))  { 
     $new_slider       = new RevSlider();
     $tot_revsliders   = $new_slider->getArrSliders();
+    array_push($array_choices, 
+                    array('value' => '',
+                          'label' => __('Choose a Slider','theme-text-domain'),
+                          'src'   =>''));  
     foreach ( $tot_revsliders as $rev_single ) {
          $alias   = $rev_single->getAlias();
          $title   = $rev_single->getTitle();
