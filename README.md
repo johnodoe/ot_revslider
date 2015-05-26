@@ -2,7 +2,7 @@
 Revolution slider metabox for option tree plugin (select field)
 
 ## Synopsis
-This is an addition to the default example of meta_boxex.php included in Option Tree Plugin:
+This is an addition to the default example of demo-meta-boxes.php included in Option Tree Plugin:
 
 https://github.com/valendesigns/option-tree/blob/master/assets/theme-mode/demo-meta-boxes.php
 
