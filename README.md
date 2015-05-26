@@ -46,7 +46,7 @@ Just replace the original demo-meta-box.php with this one, or copy only the two 
 In order to print the selected metabox revolution slider in your theme use:
       
       $my_slider        = get_post_meta($post->ID, 'slider_select', true); 
-      if(function_exists("putRevSlider") { 
+      if ( ( function_exists("putRevSlider") ) && ( !empty($my_slider) ) ) { 
         putRevSlider  ( $my_slider ); 
-        // or you can user standard do_shortcode('[revslider ' . $my_slider. ']');
+        // or you can user standard do_shortcode('[rev_slider ' . $my_slider. ']');
       };
