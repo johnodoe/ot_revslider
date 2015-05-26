@@ -35,7 +35,7 @@ Then i add the array to $my_meta_box array
       // rest of the settings
       
 ## Installation
-Just replace the original meta_box.php with this one, or copy only the two parts above. You'll find the new element in your page/post metabox
+Just replace the original demo-meta-box.php with this one, or copy only the two parts above. You'll find the new element in your page/post metabox
 
 ![Alt text](http://i.imgur.com/UDSe5vm.jpg "Screenshot")
 
